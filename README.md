@@ -2,8 +2,8 @@
 
 --------------------------------------------!!!!!!!!!!!!!!!!!!!importent note!!!!!!!!!!!!!!!!!!---------------------------
 
-please take into considertaion that this project is still a working progress and modification and fixes are still adding untill viva is done. this is demo project that was use to do a vulanarability assesment assigmnet. this project is solery for personal use only.
-please take note that delivring a ML product in week is a heavy task that we took amid with our current semester time manegemt crisis. this project was developed sorley to do the assesment only that.the technical paper along with the project will give inside to the demo fuctionalities. note to madam, we tired our best to deliver a product to your requirements with ML!. use this project as a reference only.
+Please consider that this project is still in progress, and modifications and fixes will continue until Viva is done. This is a demo project that was used to do a usability assessment. This project is solely for personal use only.
+Please note that delivering an ML product in a week is a heavy task we took on amid our current semester time management crisis. This project was developed sorely to do the assessment only. The technical paper and project will give insight into the demo functions. To madam, we tried our best to deliver a product that meets your requirements with ML! Use this project as a reference only.
 
 ### About
 
