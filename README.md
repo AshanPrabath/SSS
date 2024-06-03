@@ -4,9 +4,6 @@
 please take into considertaion that this project is still a working progress and modification and fixes are still adding untill viva is done. this is demo project that was use to do a vulanarability assesment assigmnet. this project is solery for personal use only.
 please take note that delivring a ML product in week is a heavy task that we took amid with our current semester time manegemt crisis. this project was developed sorley to do the assesment only that.the technical paper along with the project will give inside to the demo fuctionalities. note to madam, we tired our best to deliver a product to your requirements with ML!. use this project as a reference only.
 
-
-.
-
 ### About
 
 In this projects a user can visit the websites, registers and login to the website. They can check all the products available for shopping, filter and search item based on different categories, and then add to cart. They can add multiple item to the cart and also plus or minus the quantity in the cart. Once the cart is updated, the user can proceed to checkout and click the credit card payment details to proceed. Once the payment is success the orders will be placed and users will be able to see the orders details in the orders section along with the shipping status of the product.
