@@ -1,6 +1,7 @@
 # Ecommerce platform with ML (E-Commerce Website)
 
 --------------------------------------------!!!!!!!!!!!!!!!!!!!importent note!!!!!!!!!!!!!!!!!!---------------------------
+
 please take into considertaion that this project is still a working progress and modification and fixes are still adding untill viva is done. this is demo project that was use to do a vulanarability assesment assigmnet. this project is solery for personal use only.
 please take note that delivring a ML product in week is a heavy task that we took amid with our current semester time manegemt crisis. this project was developed sorley to do the assesment only that.the technical paper along with the project will give inside to the demo fuctionalities. note to madam, we tired our best to deliver a product to your requirements with ML!. use this project as a reference only.
 
