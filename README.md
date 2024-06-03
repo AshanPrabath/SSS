@@ -1,4 +1,4 @@
-# Online Shopping Cart (E-Commerce Website)
+# Ecommerce platform with ML (E-Commerce Website)
 
 ### About
 
