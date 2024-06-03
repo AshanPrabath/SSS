@@ -27,57 +27,77 @@ Sometimes, if the user tried to add any item which is out of stock, them they wi
 3. Database:
 - MySql
 
-### ================= Dummy Database Initialization =================
-STEP 1: Open MySQL Command Prompt or MySQL Workbench
+ --------------------------Database Initialization-----------------------------
+Open MySQL Command Prompt or MySQL Workbench.
 
-STEP 2: Login to the administrator user of MySql:
-	 ```mysql -u <username> -p``` (Enter Password if asked)
+1.Log in to the MySQL administrator user:
 
-STEP 3: Copy paste and execute the MySQL Query from the text file.
+sh
+Copy code
+mysql -u <username> -p
+Enter the password if prompted.
 
-### ======GENERATING GMAIL APP PASSWORD [For Mailing Functionalities]========
-Step 1: Create a gmail account or login to existing account in any browser
+Execute the MySQL Query:
 
-Step 2 : Go to [https://myaccount.google.com/security](https://myaccount.google.com/security) and check if 2 step verifications is enabled or not, enable it if not enabled
+Copy and paste the provided SQL queries from the text file into the MySQL command prompt or MySQL Workbench to create and initialize the database.
 
-Step 3: Go to [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) and enter password if asked
+-------------------Create a Gmail account or log in to an existing account in a browser.-----------------
 
-Step 4: In Select an App Section: select Other (custom name) => enter "Green Store" => Generate
+2. Enable 2-step verification:
 
-Step 5: After that it will generate 16 digits app password which you need to copy and save for future configurations.
+Go to Google Security and ensure that 2-step verification is enabled.
+Generate an App Password:
 
-Step 6: Done : Now continue to importing the project. [Don't share the above password generated to anyone]
+Go to Google App Passwords and enter your account password if asked.
+In the "Select App" section, choose "Other (Custom name)" and enter "Green Store."
+Click "Generate" to get a 16-digit app password. Copy and save this password for future use. Do not share this password with anyone.
+Importing and Running the Project Through Eclipse EE
 
-### ========== Importing and Running The Project Through Eclipse EE ==========
 
-Step 1: Open Eclipse Enterprise Edition. [Install, if not already installed.]
+---------------Open Eclipse Enterprise Edition.----------------------
 
-Step 2: Click On File > Import > Git > Projects From Git > Clone Uri > Paste The Repository Url as: ```https://github.com/Sandithya21/Shopping-Cart```> Select master Branch > Next > Next > Finish.
+3.Go to Java Resources > src > and update the following:
+db.username and db.password with your MySQL credentials.
+mailer.email and mailer.password with the email and app password generated earlier.
+Run Maven Build:
 
-Step 3: Go inside ```Java Resources > src > application.properties``` and update the values as below:
-- a) Update value for db.username and db.password according to your installed mysql credentials.
-- b) Update value for mailer.email and mailer.password, with the same email and app password that you generated earlier in above section [ NOTE:Actual gmail password will not work]
+Right-click on the project, select Run As > Maven Build.
+In the goals field, enter clean install, then click Apply and Run.
+Configure Build Path:
 
-Step 4: Right Click on Project > Run as > Maven Build > In the goals field enter "clean install" > apply > run
+Right-click on the project, select Build Path > Configure Build Path.
+Go to Libraries and update any libraries if there are red marks, then click Finish.
+Update Project:
 
-Step 5: Right Click On Project > Build Path > Configure Build Path > Libraries > Remove and Update Any Libraries if Red Mark Exists > Finish.
+Right-click on the project, select Maven > Update Project.
+Check Force Update, then click Apply and Close.
+Tomcat Configurations:
 
-Step 6: Right Click on Project > maven > update project > select force update > apply > close
+@@@@@@@(If Tomcat Server is not configured in Eclipse: 
+Right-click on the project, select Run As > Run On Server.
+Manually define a new server, select the Tomcat version (v9.0+), and set the installation location if asked.
+Add the current project, then click Finish.)@@@@@@@
 
-Step 7: Tomcat Configurations:
-- If Tomcat Server is not configured in Eclipse :
-	-  Right Click On Project > Run As > Run On Server > Manually Define a new server > Select server type > select Tomcat v9.0+ > (Select Tomcat V9.0+ Installation Location If Asked) > Next > Add the current project > Finish.
+@@@@@@@@(If Tomcat Server is already configured in Eclipse:
+Right-click on the project, select Run As > Run On Server.
+Select the Tomcat version, add the project, then click Finish.
+Alternatively, go to the server tab, select the Tomcat server, and use the debug or run button to start the project.)@@@@@@@
 
-- Else If Tomcat Server is already configured in Eclipse:
-	- Right Click On Project > Run As > Run On Server > Select Tomcat Version > Next > Add the project > Finish.
-		<p align='center'>or</p>
-	- You can directly goto server tab, select the tomcat server and use the debug or run button to start the previously ran project
 
-Step 8: Check Running The Site At  [http://localhost:8080/shopping-cart/](http://localhost:8080/shopping-cart/)
+-------------------Check the Running Site:-------------------------------
 
-Step 9:  [To Change the Port, if getting error like 'port already in use'] Open The Server Tab > Double Click On Tomcat Server > Ports > Change The Port Number For Http/1.1 To 8083 > Close And Save. Now Start and you can access the project on [http://localhost:8083/shopping-cart/](http://localhost:8083/shopping-cart/)
+4. Open http://localhost:8080/project_name/ to see the running site.
+Change Port if Necessary:
 
-Step 10: Default Username And Password For Admin Is "admin@gmail.com" And "admin"
+If you encounter a "port already in use" error, open the server tab.
+Double-click on the Tomcat server, go to Ports, and change the Http/1.1 port to 8083.
+Save and start the server. Access the project at http://localhost:8083/my_project/.
+Default Credentials:
 
-Step 11: The default Username And Password For User Is "guest@gmail.com" And "guest"
+
+----------extra -----
+Admin username: admin@gmail.com
+Admin password: admin
+User username: guest@gmail.com
+User password: guest
 
